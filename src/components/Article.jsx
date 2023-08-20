@@ -34,7 +34,7 @@ const Article = async ({ post, idPost }) => {
     const postComments = await getComments(idPost);
 
     return (
-        <article className="bg-neutral-200 p-12 mt-8 rounded relative">
+        <article className="bg-neutral-200 p-12 mt-8 rounded relative mb-8">
             <h2 className="text-3xl font-semibold mb-4">
                 {post.title.toUpperCase()}
             </h2>
