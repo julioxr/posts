@@ -17,7 +17,7 @@ export default async function Home() {
             <h1 className="text-4xl mt-8 font-bold">Elije un Posts</h1>
             <section className="flex gap-4 flex-wrap justify-center mt-8 items-center">
                 {posts.map((post) => {
-                    return <Card post={post} />;
+                    return <Card post={post} key={post.id} />;
                 })}
             </section>
         </section>
