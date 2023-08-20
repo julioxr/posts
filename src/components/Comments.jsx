@@ -23,7 +23,10 @@ const Comments = ({ postComments }) => {
             >
                 {postComments.map((comment) => {
                     return (
-                        <div className="bg-neutral-100 flex flex-col gap-4 p-4">
+                        <div
+                            className="bg-neutral-100 flex flex-col gap-4 p-4"
+                            key={comment.id}
+                        >
                             <div>
                                 <p className="pb-1 text-lg">Comentario:</p>
                                 <p className="italic">
